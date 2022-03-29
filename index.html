@@ -1,0 +1,123 @@
+<?<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<title>что-то</title>
+	<script src="jquery-3.5.1.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var touch = $('#touch-menu');
+			var menu = $('.nav');
+			var shdw = $('.backdrop');
+
+			$(touch).on('click', function (e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function () {
+				var wid = $(window).width();
+				if (wid > 760 && menu.is(':hidden')) {
+					menu.removeAttr('style');
+				}
+			});
+		});
+		jQuery(document).ready(function ($) {
+			$('.icon-menu').click(function (event) {
+				$('.sidebar').toggleClass('active');
+			});
+		});
+	</script>
+</head>
+?>
+<body>
+	<div id="wrapper">
+		<div class="header">
+			<div class="icon-menu">
+				<span class="divide"></span>
+				<span class="divide"></span>
+				<span class="divide"></span>
+			</div>
+			<div class="logo">
+				<a href="index.html"><img src="logo.png" class="logo" alt="" srcset=""></a>
+
+			</div>
+			<div class="container">
+				<a href="#" id="touch-menu">меню</a>
+				<nav>
+					<ul class="nav clearfix">
+						
+						<li><a href="maps.html">Местоположение чудес</a></li>
+						<li><a href="source.html">Источники</a></li>
+						<li><a href="index.html">Главная страница</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="backdrop"></div>
+		</div>
+	</div>
+	<div class="slider">
+		<img src="slider.png" class="lala" alt="" srcset="">
+			<h1 class="in-logo">7 ЧУДЕС ТАТАРСТАНА</h1>
+		<div class="in-logo">
+		
+		</div>
+	</div>
+	<div class="main clearfix"></div>
+	<div class="sidebar left ">
+		<ul>
+			<li><a href="KzKr.html">Казанский Кремль</a></li>
+			<li><a href="BaSu.html">Башня Сююмбике</a></li>
+			<li><a href="Blag.html">Благовещенский собор</a></li>
+			<li><a href="KulSh.html">Кул-Шариф</a></li>
+			<li><a href="NaBi.html">Нациоланьная библиотека</a></li>
+			<li><a href="PetrPav.html">Петропавловский собор</a></li>
+			<li><a href="SaKo.html">Коран</a></li>
+		</ul>
+	</div>
+	<div class="content">
+
+		<div class="clearfix">
+			<div class="post">
+				<div class="img"><a href="KzKr.html"><img class="img" src="img/KK.jpg" alt="ktm.html"></a></div>
+				Кремль. Прекрасное место для проведения отдыха, да ещё и историческо важное место!
+			</div>
+			<div class="post">
+				<div class="img"><a href="BaSu.html"><img class="img" src="img/BS.jpg"></a></div>
+				В отличие от Пизанской башни, башня Сююмбике построена около реки, на влажной почве, да и его крен от
+				вертикали составляет 2 метра.
+			</div>
+
+
+			<div class="post">
+				<div class="img"><a href="Blag.html"><img class="img" src="img/BSH.jpg" width="250"></a></div>
+				Благовещенский собор является православным храмом и образцом псковской архитектурной школы.
+			</div>
+			<div class="post">
+				<div class="img"><a href="KulSh.html"><img class="img" src="img/KSH.jpg" width="250"></a></div>
+				Мечеть Кул-Шариф cчитается главной достопримечательностью Татарстана. <!--Мечеть Кул-Шариф в Казани! фотография мечети с мусульманским львом. -->
+			</div>
+			<div class="post">
+				<div class="img"><a href="NaBi.html"><img class="img" src="img/NB.jpg" width="250"></a></div>
+				Национальная библиотека Татарстана насчитывает более трех миллионов разных документов и книг на разных
+				языках.
+			</div>
+			<div class="post">
+				<div class="img"><a href="PetrPav.html"><img class="img" src="img/SPP.jpg" width="250"></a></div>
+				Петропавловский собор посещяли все императоры, и почти все известные люди, независимо от
+				вероисповедания.
+			</div>
+			<div class="post">
+				<div class="img"><a href="SaKo.html"><img class="img" src="img/SK.jpg" width="250"></a></div>
+				Самый большой Коран, известный на сегодня мусульманам, был создан в России во втором тысячелетии  новой эры. Несмотря на простоту, он был прекрасно оформлен.
+			</div>
+		</div>
+	</div>
+
+	<div class="footer clearfix">
+		<div class="copyright">Здесь написано про авторские права, мы все придумали, а картинки взяты из интернета.
+		</div>
+	</div>
+	</div>
+</body>
+
+</html>
